@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition: 0.3s ease !important; */
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggleBtn {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.heroImg {
+  height: 100%;
+}
+
+.profileCard img {
+  height: 100%;
+}
+
+button.cta {
+  background: #1a2958 !important;
+  color: #fff;
+  padding: 10px;
+}
+
+.myModalLink a {
+  text-align: center;
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.cta2 {
+  width: 100%;
+}
+
+.curstonHr {
+  height: 5px;
+  background: #1a2958;
+  width: 50px;
+}
+
+.curstonHr2 {
+  height: 5px;
+  background: #fff;
+  width: 50px;
+}
+
+.highlight {
+  background: #1a2958;
+  color: #fff;
+  padding: 5px;
+  margin: 2px;
+  /* line-height: 15px; */
+}
+
+@media (max-width: 495px) {
+  .partner {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .partner {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .logo {
+    width: 120px !important;
+  }
+
+  .community {
+    grid-template-columns: 1fr !important;
+  }
+}
