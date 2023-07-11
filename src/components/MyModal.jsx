@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Box, Button, Modal, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link as ScrollLink } from 'react-scroll';
 
 const style = {
     position: 'absolute',
@@ -43,27 +44,22 @@ const MyModal = ({ open, handleClose }) => {
                                 HOME
                             </Typography>
                         </Link>
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        <ScrollLink to="whyus" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 ABOUT
                             </Typography>
-                        </Link>
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        </ScrollLink>
+                        <ScrollLink to="community" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 COMMUNITY
                             </Typography>
-                        </Link>
-                        {/* <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
-                                EVENTS
-                            </Typography>
-                        </Link> */}
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        </ScrollLink>
+                        <ScrollLink to="leaders" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 TEAM
                             </Typography>
-                        </Link>
-                        <Link to={"/"}>
+                        </ScrollLink>
+                        <Link to={"/contact"}>
                             <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
                                 CONTACT
                             </Typography>

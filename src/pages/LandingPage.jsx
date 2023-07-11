@@ -6,6 +6,7 @@ import WhyUs from '../components/WhyUs'
 import Misssion from '../components/Misssion'
 import Community from '../components/Community'
 import Leaders from '../components/Leaders'
+import { Element, scroller } from 'react-scroll';
 
 const LandingPage = () => {
     return (
@@ -36,11 +37,26 @@ const LandingPage = () => {
                     </Stack>
                 </Box>
             </Box>
-            <Partners />
-            <WhyUs />
-            <Misssion />
-            <Community />
-            <Leaders />
+            <Element name="partners">
+                <Partners />
+            </Element>
+
+            <Element name="whyus">
+                <WhyUs />
+            </Element>
+
+            <Element name="mission">
+                <Misssion />
+            </Element>
+
+            <Element name="community">
+                <Community />
+            </Element>
+
+            <Element name="leaders">
+                <Leaders />
+            </Element>
+
         </Box>
 
     )

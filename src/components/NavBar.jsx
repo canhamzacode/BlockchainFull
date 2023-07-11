@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import navLogo from "../assets/image/navLogo.png"
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 // import 
+import { Link as ScrollLink } from 'react-scroll';
 
 const NavBar = ({ handleOpenNav }) => {
     return (
@@ -29,27 +30,22 @@ const NavBar = ({ handleOpenNav }) => {
                                 HOME
                             </Typography>
                         </Link>
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        <ScrollLink to="whyus" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 ABOUT
                             </Typography>
-                        </Link>
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        </ScrollLink>
+                        <ScrollLink to="community" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 COMMUNITY
                             </Typography>
-                        </Link>
-                        {/* <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
-                                EVENTS
-                            </Typography>
-                        </Link> */}
-                        <Link to={"/"}>
-                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
+                        </ScrollLink>
+                        <ScrollLink to="leaders" smooth={true} duration={500}>
+                            <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }}>
                                 TEAM
                             </Typography>
-                        </Link>
-                        <Link to={"/"}>
+                        </ScrollLink>
+                        <Link to={"/contact"}>
                             <Typography variant='p' sx={{ fontWeight: "500", fontSize: "15px" }} >
                                 CONTACT
                             </Typography>
